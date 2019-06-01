@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Nova+Square&display=swap');
+@import url("variables.css");
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+@font-face {
+    src: url(../fonts/quantify/Quantify.ttf);
+    font-family: 'quantify';
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.sg {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.nova {
+    font-family: var(--title-font);
+    font-size: 28pt;
+    height: 5vh;
+    width: 100vw;
+    font-weight: 100;
+    color: black;
+    background-color: white;
+}
+
+.quantify {
+    font-family: var(--main-font);
+    font-size: 18pt;
+    font-weight: 100;
+    height: 5vh;
+    width: 100vw;
+    color: black;
+    background-color: white;
+}
+
+.novaSmall {
+    font-family: var(--main-font);
+    font-size: 12pt;
+    font-weight: 100;
+    height: 5vh;
+    width: 600px;
+    color: black;
+    background-color: white;
+    display: block;
+    margin-bottom: 20px;
+    height: 70px;
+}
+
+.buttons {
+    width: 500px;
+    height: 100px;
+    background-color: lightgray;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    margin-left: 30px;
+    transition-duration: .3s;
+    float: left;
+}
+
+#arrow-right {
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    transition-duration: .3s;
+    margin-right: 30px;
+    float: right;
+}
+
+#arrow-left:hover {
+    border-color: transparent var(--main-color) transparent transparent;
+    transition-duration: .3s;
+}
+
+#arrow-right:hover {
+    border-color: transparent transparent transparent var(--main-color);
+    transition-duration: .3s;
+}
+
+.dot {
+    cursor: pointer;
+    height: 14px;
+    width: 24px;
+    margin: 10px 10px;
+    border-radius: 3px;
+    background-color: var(--main-color);
+    transition: background-color 0.6s ease;
+    display: inline-table;
+}
+
+.dot:hover {
+    box-sizing: border-box;
+    background-color: var(--light-color);
+    display: inline-table;
+    border: solid 2px var(--main-color);
+}
+
+.dots {
+    justify-content: center;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnReserveer {
+    height: 30px;
+    width: 300px;
+    margin-right: 5px;
+    background-color: var(--dark-color);
+    color: white;
+    border: none;
+    border-bottom: solid 3px var(--main-color);
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 10px;
+    transition-duration: .3s;
+}
+
+.btnReserveer:hover {
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: white;
+    transition-duration: .3s;
+}
+
+.reserveerMail {
+    background-color: var(--main-color);
+    border-bottom: solid 3px var(--dark-color);
+    transition-duration: .3s;
+}
+
+.reserveerMail:hover {
+    background-color: var(--dark-color);
+    color: white;
+    transition-duration: .3s;
+}
+
+#reserverenWrapper {
+    height: auto;
+    width: 800px;
+    background-color: var(--light-color);
+}
+
+#reserverenWrapper form {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-left: 35%;
+    text-align: left;
+    font-family: var(--main-font);
+    opacity: .8;
+    padding-bottom: 20px;
+}
+
+#reserverenWrapper h1 {
+    background-color: black;
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    font-family: var(--title-font);
+    font-size: 30pt;
+    border-top-right-radius: 3px;
+    font-weight: 100;
+}
+
+#reserverenWrapper input,
+#reserverenWrapper select,
+#reserverenWrapper label {
+    display: block;
+}
+
+#reserverenWrapper label::before {
+    content: '';
+    width: 3px;
+    height: 45px;
+    background-color: var(--main-color);
+    display: block;
+    position: absolute;
+    left: 30%;
+}
+
+#reserverenWrapper label {
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+
+#reserverenWrapper input,
+#reserverenWrapper select {
+    width: 260px;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: solid 2px var(--main-color);
+    background-color: var(--light-color);
+    border-radius: 3px;
+}
+
+#reserverenWrapper input:focus,
+#reserverenWrapper select:focus {
+    outline: none;
+}
+
+#reserverenWrapper select {
+    width: 16rem;
+    height: 2rem;
+}
+
+#reserverenWrapper .btnReserveer {
+    height: 30px;
+    float: left;
+    width: 270px;
+    margin-right: 5px;
+    background-color: var(--dark-color);
+    color: white;
+    border: none;
+    border-bottom: solid 3px var(--main-color);
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 10px;
+    transition-duration: .3s;
+}
+
+#reserverenWrapper .btnReserveer:hover {
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: white;
+    transition-duration: .3s;
+}
+
+#reserverenWrapper .reserveerMail {
+    background-color: var(--main-color);
+    border-bottom: solid 3px var(--dark-color);
+    transition-duration: .3s;
+}
+
+#reserverenWrapper .reserveerMail:hover {
+    background-color: var(--dark-color);
+    color: white;
+    transition-duration: .3s;
+}
+
+#reserverenWrapper .circle::before {
+    content: ' \25CF';
+    font-size: 45pt;
+    display: block;
+    position: absolute;
+    left: 28%;
+    color: var(--main-color);
+    margin: -5px -5px 0 0;
+}
+
+#reserverenWrapper #buttons {
+    margin-top: 20px;
+}

@@ -1,0 +1,249 @@
+@import url(https://fonts.googleapis.com/css?family=Nova+Square&display=swap);
+@import url(../css/variables.css);
+@import url(/css/slideshow.css);
+@import url(hamburger.css);
+
+@font-face {
+    src: url(../fonts/quantify/Quantify.ttf);
+    font-family: 'quantify';
+}
+
+@media (max-width: 1000px) {
+    #logo {
+        position: absolute;
+        width: 250px;
+        height: auto;
+        top: -1px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    #menuContainer {
+        width: 100vw;
+        position: absolute;
+        top: 20px;
+        margin-top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    #hetTeam {
+        min-width: 100px;
+        height: auto;
+        background-color: white;
+        opacity: .8;
+        position: absolute;
+        top: 39%;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    #hetTeam h1 {
+        background-color: black;
+        min-width: 100px;
+        padding: 10px 0;
+        color: white;
+        text-align: center;
+        font-family: var(--title-font);
+        font-size: 30pt;
+        border-top-right-radius: 3px;
+        font-weight: 100;
+    }
+
+    #teamContent {
+        padding: 40px 30px;
+        font-family: var(--main-font);
+    }
+
+    #deZaal .zaalTitle h1 {
+        font-family: var(--title-font);
+        font-size: 28pt;
+        height: 5vh;
+        width: 100vw;
+        font-weight: 100;
+        text-align: center;
+        color: black;
+        background-color: white;
+    }
+
+    body {
+        position: relative;
+        height: 100vh;
+    }
+
+    #deZaal h2 {
+        font-family: var(--main-font);
+        font-size: 12pt;
+        font-weight: 100;
+        height: 5vh;
+        width: 100vw;
+        text-align: center;
+        color: black;
+        background-color: white;
+    }
+
+    #menuContainer a {
+        text-decoration: none;
+        display: block;
+        padding: 10px 0 10px 20px;
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        transition-duration: .3s;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 100vw) {
+    #logo {
+        position: absolute;
+        width: 300px;
+        height: auto;
+        top: -1px;
+        left: calc(50% - 300px);
+    }
+
+    #menuContainer {
+        height: 200vh;
+        width: 16%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: black;
+        font-family: var(--main-font);
+        display: flex;
+        overflow: hidden;
+        float: right;
+    }
+
+    #hetTeam {
+        width: 800px;
+        background-color: white;
+        opacity: .8;
+        position: absolute;
+        top: 39%;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    #hetTeam h1 {
+        background-color: black;
+        width: 800px;
+        padding: 10px 0;
+        color: white;
+        text-align: center;
+        font-family: var(--title-font);
+        font-size: 30pt;
+        border-top-right-radius: 3px;
+        font-weight: 100;
+    }
+
+    #teamContent {
+        padding: 40px 30px;
+        font-family: var(--main-font);
+    }
+
+    #deZaal .zaalTitle h1 {
+        font-family: var(--title-font);
+        font-size: 30pt;
+        height: 5vh;
+        font-weight: 100;
+        text-align: center;
+        color: black;
+        background-color: white;
+    }
+
+
+    #deZaal h2 {
+        font-family: var(--main-font);
+        font-size: 16pt;
+        font-weight: 100;
+        height: 5vh;
+        text-align: center;
+        color: black;
+        background-color: white;
+    }
+
+    #deZaal {
+        max-height: 100vh;
+        overflow: hidden;
+        width: 84vw;
+        min-width: 84vw;
+    }
+
+    #menuContainer a {
+        text-decoration: none;
+        display: block;
+        padding: 10px 0 10px 20px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        transition-duration: .3s;
+    }
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    object-fit: cover;
+    width: 100%;
+}
+
+.overOns {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../pics/boxed-water-is-better-1464060-unsplash.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menuContainer .menu {
+    position: fixed;
+    top: 38%;
+    padding-left: 15px;
+}
+
+#menuContainer a:hover {
+    transition-duration: .3s;
+    background-color: var(--main-color);
+    border-radius: 15px;
+}
+
+#menuContainer li {
+    list-style-type: none;
+}
+
+#menuContainer ul li ul {
+    display: none;
+    transition-duration: .3s;
+}
+
+#menuContainer ul li:hover ul {
+    transition-duration: .3s;
+    display: block;
+    font-size: 10pt;
+}
+
+#menuContainer ul ul a::before {
+    content: '\203a';
+    margin-right: 20px;
+}
+
+#menuContainer .sub-arrow::after {
+    content: '\203a';
+    float: right;
+    margin-right: 20px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}

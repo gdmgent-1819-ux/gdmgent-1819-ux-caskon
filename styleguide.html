@@ -1,21 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Styleguide</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/styleguide.css">
+    <link rel="stylesheet" href="css/styleguide.css">
+    <link rel="stylesheet" href="css/variables.css">
 </head>
+
 <body>
-<div class="container">
-    <h1 class="sg-title">Digital styleguide</h1>
-    <h2 class="sg-subtitle">Kleuren</h2>
-    <h2 class="sg-subtitle">Typografie</h2>
-    <h2 class="sg-subtitle">Knopppen</h2>
-    <h2 class="sg-subtitle">Formulier</h2>
-    <h2 class="sg-subtitle">Componenten</h2>
-</div>
+    <div class="container">
+        <h1 class="sg sg-title">Digital styleguide</h1>
+        <h2 class="sg sg-subtitle">Kleuren</h2>
+        <ul>
+            <li style="color:var(--main-color);">Main kleur #3E41C1;</li>
+            <li style="color: #c1803e;">Complementair kleur:#c1803e </li>
+            <li style="color:rgb(223, 223, 223); background-color:black; width: 200px;">Licht kleur: rgb(223,
+                223,
+                223)</li>
+            <li style="color: rgb(92, 82, 82);">Dark kleur: rgb(92, 82, 82)</li>
+        </ul>
+        <h2 class="sg sg-subtitle">Typografie</h2>
+        <ul>
+            <li class="nova">Main font: 'Nova Square'</li>
+            <li class="quantify">Title font: 'Quantify'</li>
+            <li class="novaSmall">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ut voluptate aliquam
+                asperiores hic
+                laudantium? Accusantium, illum dolorum quia veritatis pariatur expedita! Voluptatem eligendi similique
+                vitae totam, tempora nesciunt natus?</li>
+        </ul>
+        <h2 class=" sg sg-subtitle">Knoppen</h2>
+        <div class="buttons">
+            <div id="arrow-left" class="arrow"></div>
+            <p>slideshow</p>
+            <div id="arrow-right" class="arrow"></div>
+        </div>
+        <div class="buttons dots">
+            <div>
+                <span class="dot demo"></span>
+                <span class="dot demo"></span>
+                <span class="dot demo"></span>
+                <span class="dot demo"></span>
+                <span class="dot demo"></span>
+            </div>
+        </div>
+        <div class="buttons">
+            <div id="buttons formButtons">
+                <button class="btnReserveer reserveerMail">Reserveer en ontvang een wekelijks
+                    menu</button>
+                <button class="btnReserveer">Reserveer</button>
+            </div>
+        </div>
+        <h2 class="sg sg-subtitle">Formulier</h2>
+        <div id="wrapper">
+            <div id="reserverenWrapper">
+                <h1>Reserveren</h1>
+                <form action="#" class="reserveren">
+                    <label for="naam">Naam:</label>
+                    <input class="reserveren naam" type="text" name="naam">
+
+                    <label for="aantal">Aantal personen:</label>
+                    <input type="number" name="aantal" class="reserveren aantal">
+
+                    <label for="soort">Lunch of Diner:</label>
+                    <select name="soort" class="reserveren soort">
+                        <option value="optie">Kies een optie:</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                    </select>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <div id="buttons">
+                        <span class="circle">
+                            <button class="btnReserveer reserveerMail">Reserveer en ontvang een wekelijks
+                                menu</button>
+                            <button class="btnReserveer">Reserveer</button></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <h2 class="sg sg-subtitle">Componenten</h2>
+    </div>
 </body>
+
 </html>

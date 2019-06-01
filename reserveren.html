@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reserveren.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <title>Crisp 'n Cosy - Reserveren</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="wrapper">
+            <div id="reserverenWrapper">
+                <h1>Reserveren</h1>
+                <form action="#" class="reserveren">
+                    <label for="naam">Naam:</label>
+                    <input class="reserveren naam" type="text" name="naam">
+
+                    <label for="aantal">Aantal personen:</label>
+                    <input type="number" name="aantal" class="reserveren aantal">
+
+                    <label for="soort">Lunch of Diner:</label>
+                    <select name="soort" class="reserveren soort">
+                        <option value="optie">Kies een optie:</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                    </select>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <div id="buttons">
+                        <span class="circle">
+                            <button class="btnReserveer reserveerMail">Reserveer en ontvang een wekelijks
+                                menu</button>
+                            <button class="btnReserveer">Reserveer</button></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="logo">
+            <img class="logo" src="pics/logo.png" alt="logo">
+        </div>
+        <nav id="menuContainer">
+            <label id="label" for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" name="toggle">
+            <ul class="menu">
+                <li class="listItem"><a href="index.html">Home</a></li>
+                <li class="listItem"><a active href="overOns.html">Over ons</a></li>
+                <li class="listItem"><a href="#">Menu <span class="sub-arrow"></span></a>
+                    <ul class="listSubItems">
+                        <li class="listSubItem"><a href="#">Suggesties</a></li>
+                        <li class="listSubItem"><a href="#">Menukaart</a></li>
+                        <li class="listSubItem"><a href="#">Drankkaart</a></li>
+                    </ul>
+
+                </li>
+                <li class="listItem"><a href="reserveren.html">Reserveren</a></li>
+                <li class="listItem"><a href="#">Activiteiten</a></li>
+                <li class="listItem"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

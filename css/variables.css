@@ -1,0 +1,15 @@
+@font-face {
+    src: url(../fonts/quantify/Quantify.ttf);
+    font-family: 'quantify';
+}
+
+@import url(https://fonts.googleapis.com/css?family=Nova+Square&display=swap);
+
+:root {
+    --main-color: #3E41C1;
+    --comp-color: #c1803e;
+    --light-color: rgb(223, 223, 223);
+    --dark-color: rgb(92, 82, 82);
+    --title-font: 'quantify';
+    --main-font: 'Nova Square';
+}

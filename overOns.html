@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/overOns.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <title>Crisp 'n Cosy - Over Ons</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <div class="overOns">
+                <div id="logo">
+                    <img class="logo" src="pics/logo.png" alt="logo">
+                </div>
+                <div id="hetTeam">
+                    <h1>Het Team</h1>
+                    <div id="teamContent">
+                        <p>Wij zijn 3 jonge en gemotiveerde Gentenaars die sinds enkele maanden onze culinaire
+                            vaardigheden op een goedkope manier willen aanbieden aan jongeren. Cas, onze chef, zorgt
+                            door middel van zijn ervaring wekelijks voor een nieuwe inbreng in het menu die zorgt voor
+                            variatie. Kobe zorgt er dan weer voor dat er groot aanbod is aan cocktails én mocktails!
+                            Tenslotte hebben we ook nog Steffen die jullie spontaan en gastvrij bedienen!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="deZaal">
+            <section class="zaalTitle">
+                <h1>De Zaal</h1>
+            </section>
+            <section class="zaalSubtitle">
+                <h2>Rustgevende ruimtes met sfeervolle soul en jazz muziek.</h2>
+            </section>
+            <div id="slideshowContainer">
+                <div id="slideshowFoto">
+
+                    <div id="slider">
+                        <div class="slide slide1 fade">
+                            <div class="slide-content">
+                                <span>Cosy</span>
+                            </div>
+                        </div>
+                        <div class="slide slide2 fade">
+                            <div class="slide-content">
+                                <span>Crispy</span>
+                            </div>
+                        </div>
+                        <div class="slide slide3 fade">
+                            <div class="slide-content">
+                                <span>Populair</span>
+                            </div>
+                        </div>
+                        <div class="slide slide4 fade">
+                            <div class="slide-content">
+                                <span>Open keuken</span>
+                            </div>
+                        </div>
+                        <div class="slide slide5 fade">
+                            <div class="slide-content">
+                                <span>Modern interieur</span>
+                            </div>
+                        </div>
+                        <div id="arrow-left" onclick="plusSlides(-1)" class="arrow"></div>
+                        <div id="arrow-right" onclick="plusSlides(1)" class="arrow"></div>
+                    </div>
+
+                    <div id="dots" style="text-align:center">
+                        <span class="dot demo" onclick="currentSlide(1)"></span>
+                        <span class="dot demo" onclick="currentSlide(2)"></span>
+                        <span class="dot demo" onclick="currentSlide(3)"></span>
+                        <span class="dot demo" onclick="currentSlide(4)"></span>
+                        <span class="dot demo" onclick="currentSlide(5)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="menuContainer">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" name="toggle">
+            <ul class="menu">
+                <li class="listItem"><a href="index.html">Home</a></li>
+                <li class="listItem"><a active href="#">Over ons</a></li>
+                <li class="listItem"><a href="#">Menu <span class="sub-arrow"></span></a>
+                    <ul class="listSubItems">
+                        <li class="listSubItem"><a href="#">Suggesties</a></li>
+                        <li class="listSubItem"><a href="#">Menukaart</a></li>
+                        <li class="listSubItem"><a href="#">Drankkaart</a></li>
+                    </ul>
+
+                </li>
+                <li class="listItem"><a href="reserveren.html">Reserveren</a></li>
+                <li class="listItem"><a href="#">Activiteiten</a></li>
+                <li class="listItem"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="js/slideshow.js"></script>
+</body>
+
+</html>
